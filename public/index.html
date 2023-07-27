@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+  <h1>Formulario de Doctores</h1>
+  <form id="doctorForm">
+    <!-- Campos del formulario de doctores -->
+    <label for="firstName">Nombre:</label>
+    <input type="text" id="firstName" required>
+
+    <label for="lastName">Apellido:</label>
+    <input type="text" id="lastName" required>
+
+    <label for="specialty">Especialidad:</label>
+    <select id="specialty">
+      <option value="Medicina general">Medicina general</option>
+      <option value="Cardiología">Cardiología</option>
+      <option value="Medicina interna">Medicina interna</option>
+      <option value="Dermatología">Dermatología</option>
+      <option value="Rehabilitación física">Rehabilitación física</option>
+      <option value="Psicología">Psicología</option>
+      <option value="Odontología">Odontología</option>
+      <option value="Radiología">Radiología</option>
+    </select>
+
+    <label for="office">Consultorio:</label>
+    <input type="text" id="office" required>
+
+    <label for="email">Correo de contacto:</label>
+    <input type="email" id="email" required>
+
+    <button type="submit">Guardar Doctor</button>
+  </form>
+
+  <!-- Lista de doctores -->
+  <h2>Listado de Doctores</h2>
+  <ul id="doctorList"></ul>
+  
+    <h1>Formulario de Pacientes</h1>
+  <form id="patientForm">
+    <!-- Campos del formulario de pacientes -->
+    <label for="firstName">Nombre:</label>
+    <input type="text" id="firstNamePatient" required>
+
+    <label for="lastName">Apellido:</label>
+    <input type="text" id="lastNamePatient" required>
+
+    <label for="idNumber">Número de cédula:</label>
+    <input type="text" id="idNumber" required>
+
+    <label for="age">Edad:</label>
+    <input type="number" id="age" required>
+
+    <label for="phone">Teléfono:</label>
+    <input type="text" id="phone" required>
+
+    <button type="submit">Guardar Paciente</button>
+  </form>
+    
+    
+
+  <!-- Lista de pacientes -->
+  <h2>Listado de Pacientes</h2>
+  <ul id="patientList"></ul>
+
+  <!-- ... (formularios y lista de pacientes) ... -->
+
+<h1>Formulario de Citas Médicas</h1>
+<form id="appointmentForm">
+  <!-- Campos del formulario de citas médicas -->
+  <label for="patientId">Número documento paciente:</label>
+  <input type="text" id="patientId" required>
+
+  <label for="specialty">Especialidad:</label>
+  <select id="specialty">
+    <option value="Medicina general">Medicina general</option>
+    <option value="Cardiología">Cardiología</option>
+    <option value="Medicina interna">Medicina interna</option>
+    <option value="Dermatología">Dermatología</option>
+    <option value="Rehabilitación física">Rehabilitación física</option>
+    <option value="Psicología">Psicología</option>
+    <option value="Odontología">Odontología</option>
+    <option value="Radiología">Radiología</option>
+  </select>
+
+  <button type="submit">Guardar Cita</button>
+</form>
+
+<!-- Lista de citas médicas -->
+<h2>Listado de Citas Médicas</h2>
+<ul id="appointmentList"></ul>
+
+<!-- ... (script.js) ... -->
+
+  <script src="/js/script.js"></script>
+</body>
+</html>
